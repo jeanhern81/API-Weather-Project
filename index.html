@@ -9,7 +9,7 @@
 </head>
 <body>
         <!-- As a heading -->
-        <nav class="navbar navbar-light bg-light d-flex justify-content-center">
+        <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
             <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
         </nav>
 
@@ -19,6 +19,19 @@
                 <div class="card">
                     <div class="card-body">  
                         <div class="col-4">Search for a City:</div>
+                        <table class="table table-light border">
+                            <tbody>
+                                <tr class="border" id="row0"></tr>
+                                <tr class="border" id="row1"></tr>
+                                <tr class="border" id="row2"></tr>
+                                <tr class="border" id="row3"></tr>
+                                <tr class="border" id="row4"></tr>
+                                <tr class="border" id="row5"></t>
+                                <tr class="border" id="row6"></tr>
+                                <tr class="border" id="row7"></tr>
+                                <tr class="border" id="row8"></tr>
+                                <tr class="border" id="row9"></tr>        
+                            </table>
                     </div>
                 </div>
             </div>
@@ -46,15 +59,65 @@
                     </div>
             </div>
     </div>
-</div>    
+</div>   
+<!--5-Day Weather Forecast--> 
 <div class="container>"
     <div class="card" style="max-width: 900px;">
         <div class="card-body">
-            <h5 class="card-title">5-Day Forecast:</h5>
-
-            
-
-            
+            <div id="five-day-title" class="row"></div>
+                <h3 class="ml-3">5-Day Forecast</h3>
+            </div>
+            <div id="five-day-cards" class="row">
+            <div class="col-md-2dot4">
+                <div id="five-day-1" class="card bg-primary text-white mb-1">
+                    <div class="card-body">
+                        <h6></h6>
+                        <img class="weather-icon" height="auto" width="auto">
+                        <p class="temp-5 small"></p>
+                        <p class="hum-5 small"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2dot4">
+                <div id="five-day-2" class="card bg-primary text-white mb-1">
+                    <div class="card-body">
+                        <h6></h6>
+                        <img class="weather-icon" height="auto" width="auto">
+                        <p class="temp-5 small"></p>
+                        <p class="hum-5 small"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2dot4">
+                <div id="five-day-3" class="card bg-primary text-white mb-1">
+                    <div class="card-body">
+                        <h6></h6>
+                        <img class="weather-icon" height="auto" width="auto">
+                        <p class="temp-5 small"></p>
+                        <p class="hum-5 small"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2dot4">
+                <div id="five-day-4" class="card bg-primary text-white mb-1">
+                    <div class="card-body">
+                        <h6></h6>
+                        <img class="weather-icon" height="auto" width="auto">
+                        <p class="temp-5 small"></p>
+                        <p class="hum-5 small"></p>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-md-2dot4">
+                <div id="five-day-5" class="card bg-primary text-white mb-1">
+                    <div class="card-body">
+                        <h6></h6>
+                        <img class="weather-icon" height="auto" width="auto">
+                        <p class="temp-5 small"></p>
+                        <p class="hum-5 small"></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

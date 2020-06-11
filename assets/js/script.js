@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    var appID = "PUT YOUR API KEY HERE";
+    var appID = "";
 
     $(".query_btn").click(function(){
         var query_param = $(this).prev().val();
@@ -18,11 +18,7 @@ $( document ).ready(function() {
         } else if ($(this).prev().attr("placeholder") == "Zip Code") {
             var weather = "https://api.openweathermap.org/data/2.5/weather?zip=" + query_param + "&APPID=" + appID;
         }
-        // if (location.protocol === 'http:') {
-        //     url = 'http://api.openweathermap.org/data/2.5/weather?lat=21.1682895&lon=-101.6723306&units=imperial&APPID=ec50a6072ac189dee111acdd3a38ab9f';
-        // } else {
-        // url = 'https://api.openweathermap.org/data/2.5/weather?lat=21.1682895&lon=-101.6723306&units=imperial&APPID=ec50a6072ac189dee111acdd3a38ab9f';
-        // }
+   
     })
 });
 
@@ -38,11 +34,7 @@ $( document ).ready(function() {
         } else if ($(this).prev().attr("placeholder") == "Zip Code") {
             var weather = "https://api.openweathermap.org/data/2.5/weather?zip=" + query_param + "&APPID=" + appID;
         }
-        // if (location.protocol === 'http:') {
-        //     url = 'http://api.openweathermap.org/data/2.5/weather?lat=21.1682895&lon=-101.6723306&units=imperial&APPID=ec50a6072ac189dee111acdd3a38ab9f';
-        // } else {
-        // url = 'https://api.openweathermap.org/data/2.5/weather?lat=21.1682895&lon=-101.6723306&units=imperial&APPID=ec50a6072ac189dee111acdd3a38ab9f';
-        // }
+
 
         $.getJSON(weather,function(json){
             $("#city").html(json.name);
