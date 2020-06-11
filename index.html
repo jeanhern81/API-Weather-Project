@@ -6,12 +6,15 @@
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
 
     <title>Weather Project</title>
 </head>
 <body>
+        <!-- As a heading -->
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+        </nav>
+    <div class="container">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 text-center">
             <input type="text" placeholder="City"><button type="button" class="query_btn btn btn-default btn-sm">Search</button><br>
@@ -30,7 +33,8 @@
             <h2>Humidity: <span id="humidity"></span></h2>
         </div>
     </div>
-    
-
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> src="script.js"></script>
 </body>
 </html>
