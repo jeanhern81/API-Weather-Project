@@ -8,17 +8,23 @@
     <title>Weather Project</title>
 </head>
 <body>
-        <!-- As a heading -->
-        <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
-            <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
-        </nav>
+<!-- Heading -->
+<header class="container-fluid bg-dark text-white">
+    <div class="row justify-content-center">
+        <h1>Weather Dashboard</h1>
+    </div>
+</header>
 <!--searched cities table-->
-<div class="container">
+<div class="container-fluid">
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col mb-4">
                 <div class="card">
-                    <div class="card-body">  
-                        <div class="col-4">Search for a City:</div>
+                    <div class="card-body"> 
+                        <h5>Search for a City:</h5>
+                        <input type="text" class="form-control" placeholder="city">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-secondary"><i class="fas fa-search"></i></button>
+                        </div>
                         <table class="table table-light border">
                             <tbody>
                                 <tr class="border" id="row0"></tr>
@@ -40,28 +46,27 @@
     <div class="card">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <input type="text" placeholder="City"><button type="button" class="query_btn btn btn-default btn-sm">Search</button><br>
-                        <input type="text" placeholder="Zip Code"><button type="button" class="query_btn btn btn-default btn-sm">Search</button><br>
-                    </div>
+
                 </div>
                 
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2>City: <span id="city"></span></h2>
-                        <h2>Main Weather: <span id="main_weather"></span></h2>
-                        <h2>Description: <span id="description_weather"></span></h2>
+                        <h4>City: <span id="city"></span></h4>
+                        <h4>Main Weather: <span id="main_weather"></span></h4>
+                        <h4>Description: <span id="description_weather"></span></h4>
                         <img id="weather_image" src="">
-                        <h2>Temperature: <span id="temperature"></span></h2>
-                        <h2>Pressure: <span id="pressure"></span></h2>
-                        <h2>Humidity: <span id="humidity"></span></h2>
+                        <h4>Temperature: <span id="temperature"></span></h4>
+                        <h4>Pressure: <span id="pressure"></span></h4>
+                        <h4>Humidity: <span id="humidity"></span></h4>
+                        <h4>Wind Speed: <span id="wind"></span></h4>
+                        <h4>UV Index: <span id="uv"></span></h4>
                     </div>
                 </div>
             </div>
     </div>
 </div>   
 <!--5-Day Weather Forecast--> 
-<div class="container>"
+<div class="container-fluid>"
     <div class="card" style="max-width: 900px;">
         <div class="card-body">
             <div id="five-day-title" class="row"></div>

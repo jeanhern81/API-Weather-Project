@@ -15,9 +15,9 @@ $( document ).ready(function() {
         var query_param = $(this).prev().val();
 
         if ($(this).prev().attr("placeholder") == "City") {
-            var weather = "http://api.openweathermap.org/data/2.5/weather?q=" + query_param + "&APPID=" + appID;
+            var weather = "https://api.openweathermap.org/data/2.5/weather?q=" + query_param + "&APPID=" + appID;
         } else if ($(this).prev().attr("placeholder") == "Zip Code") {
-            var weather = "http://api.openweathermap.org/data/2.5/weather?zip=" + query_param + "&APPID=" + appID;
+            var weather = "https://api.openweathermap.org/data/2.5/weather?zip=" + query_param + "&APPID=" + appID;
         }
     })
 });
@@ -31,9 +31,9 @@ $( document ).ready(function() {
         var query_param = $(this).prev().val();
 
         if ($(this).prev().attr("placeholder") == "City") {
-            var weather = "http://api.openweathermap.org/data/2.5/weather?q=" + query_param + "&APPID=" + appID;
+            var weather = "https://api.openweathermap.org/data/2.5/weather?q=" + query_param + "&APPID=" + appID;
         } else if ($(this).prev().attr("placeholder") == "Zip Code") {
-            var weather = "http://api.openweathermap.org/data/2.5/weather?zip=" + query_param + "&APPID=" + appID;
+            var weather = "https://api.openweathermap.org/data/2.5/weather?zip=" + query_param + "&APPID=" + appID;
         }
 
         $.getJSON(weather,function(json){
@@ -44,6 +44,8 @@ $( document ).ready(function() {
             $("#temperature").html(json.main.temp);
             $("#pressure").html(json.main.pressure);
             $("#humidity").html(json.main.humidity);
+            $("#wind").html(json.main.wind);
+            $("#uv").html(json.main.uv);
         });
     })
 
