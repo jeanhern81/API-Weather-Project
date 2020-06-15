@@ -16,7 +16,9 @@
     </div>
 </header>
 <!--searched cities table-->
-<div class="container-fluid">
+<div class="container">
+    
+</div>
         <div class="row row-cols-1 row-cols-md-2">
             <div class="">
                 <div class="col mb-4">
@@ -28,7 +30,7 @@
                             <button class="btn btn-outline-secondary" id="city-search" type="button"><i class="fas fa-search"></i></button>
                         </div>
                         </div>
-<!--Table for 5-day weather forecast-->
+<!--Table for city search-->
                         <table class="table table-light border">
                             <tbody>
                                 <tr class="border" id="row0"></tr>
@@ -45,36 +47,35 @@
                     </div>
                 </div>
             </div>
- <!--The days weather forecast-->           
+
+<!--The days weather forecast-->   
+<div class="conainer-fluid">
 <div class="col mb-4">
     <div class="card">
             <div class="card-body">
                 <div class="row">
-                </div>
-                  <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h4>City: <span id="city"></span></h4>
-                        <h4>Main Weather: <span id="main_weather"></span></h4>
-                        <h4>Description: <span id="description_weather"></span></h4>
+                    <div class="forecast">
+                        <div class="row"></div>
+                        <div id="city"><h4>City</h4></div>
                         <img id="weather_image" src="">
-                        <h4>Temperature: <span id="temperature"></span></h4>
-                        <h4>Pressure: <span id="pressure"></span></h4>
-                        <h4>Humidity: <span id="humidity"></span></h4>
-                        <h4>Wind Speed: <span id="wind"></span></h4>
-                        <h4>UV Index: <span id="uv"></span></h4>
+                        <span id="temperature-data"></span></h4>
+                        <span id="humidity-data"></span></h4>
+                        <span id="wind-data"></span></h4>
+                        <span id="uv-data"></span></h4>
                     </div>
                 </div>
             </div>
     </div>
-</div>   
-<!--5-Day Weather Forecast--> 
-<div class="container-fluid>"
-    <div class="card" style="max-width: 900px;">
+</div> 
+
+<!--5-day weather title-->
+    <div class="card">
         <div class="card-body">
             <div id="five-day-title" class="row"></div>
-                <h3 class="ml-3">5-Day Forecast</h3>
-            </div>
-            <div id="five-day-cards" class="row">
+                <h3 class="ml-">5-Day Forecast</h3>
+        </div>
+<!--5-Day Weather Forecast-->         
+        <div id="five-day-cards" class="row">
             <div class="col-md-2dot4">
                 <div id="five-day-1" class="card bg-primary text-white mb-1">
                     <div class="card-body">
@@ -129,10 +130,14 @@
     </div>
 </div>
 
+</div>
 
 
 
+<!--CDN and Script to make the code render property-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/8b8f26d0e1.js" crossorigin="anonymous"></script>
 </body>
