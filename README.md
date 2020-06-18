@@ -3,7 +3,7 @@ Title: API Weather Dashboard
 
 Created By: Jeanette Hernandez
 
-Date: June 5, 2020
+Date: June 17, 2020
 
 Website: https://jeanhern81.github.io/API-Weather-Project/
 
