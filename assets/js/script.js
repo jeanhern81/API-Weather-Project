@@ -1,3 +1,5 @@
+
+//Variables
 $(document).ready(function () {
     let appID = "2d52799f575e2efb8c494bcd1971726e";
     let weather = "";
@@ -9,7 +11,7 @@ $(document).ready(function () {
     console.log(search_history);
     console.log(current_date);
     
-
+//Search History
     displaySearchHistory();
     function currentWeather() {
 
@@ -24,13 +26,13 @@ $(document).ready(function () {
         console.log(search_history.indexOf(city));
 
         if (search_history.indexOf(city) === -1) {
-
             search_history.push(city);
         }
 
         console.log(search_history);
         localStorage.setItem("cities", JSON.stringify(search_history));
 
+        // Pulling Data
         $.getJSON(weather, function (json) {
             let temp = (json.main.temp - 273.15) * (9 / 5) + 32;
             let windspeed = json.wind.speed * 2.237;
@@ -51,7 +53,7 @@ $(document).ready(function () {
         });
     }
 
-    
+//UV Index Function
     function uvIndex(lon, lat) {
         
         
@@ -68,7 +70,7 @@ $(document).ready(function () {
             method: "GET"
         }).then(function(response) {
             $("#uvindex").text(response.value);
-            var uvFinal = response.value;
+            //var uvFinal = response.value;
         })
         
 
@@ -76,7 +78,7 @@ $(document).ready(function () {
     };
 
 
-
+    //5-day forecast funciton
     function fiveDayForecast() {
         let five_day_forecast = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + ",us&APPID=" + appID;
 
@@ -108,6 +110,7 @@ $(document).ready(function () {
         });
     }
 
+    //Searched History Left float display
     function displaySearchHistory() {
 
         $("#search-history").empty();
