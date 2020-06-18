@@ -16,10 +16,13 @@ Information:
 This simple to use weather dashboard features a history log of your most visited cities, that can be cleared by the press of button. You can switch from city to see to view the local temperature, humidty, wind speed, uv index, along with the 5 day weather forecast. 
 
 --
-Referces: 
 
-<a href="https://openweathermap.org/api/uvi"> Open Weather </a>
+References: 
+
+<a href="https://openweathermap.org/api/uvi"> Open Weather</a>
+
 <a href="https://www.w3schools.com/js/js_json_stringify.asp"> W3Schools - JSON. Stringify ()</a>
+
 <a href="https://openweather.co.uk/blog/post/how-use-openweathermap-uv-index">How to use Open WeatherMap UV Index</a>
 
 ---
