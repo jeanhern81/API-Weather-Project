@@ -28,7 +28,7 @@ $(document).ready(function () {
         if (search_history.indexOf(city) === -1) {
             search_history.push(city);
         }
-
+        //local storage for serach history
         console.log(search_history);
         localStorage.setItem("cities", JSON.stringify(search_history));
 
@@ -55,10 +55,6 @@ $(document).ready(function () {
 
 //UV Index Function
     function uvIndex(lon, lat) {
-        
-        
-
-        
         var indexURL =
             "https://api.openweathermap.org/data/2.5/uvi?appid=2d52799f575e2efb8c494bcd1971726e&lat=";
         var middle = "&lon=";
@@ -67,14 +63,13 @@ $(document).ready(function () {
 
         $.ajax({
             url: indexSearch,
-            method: "GET"
+            method: "GET",
         }).then(function(response) {
             $("#uvindex").text(response.value);
             //var uvFinal = response.value;
         })
         
 
-        
     };
 
 
@@ -84,9 +79,10 @@ $(document).ready(function () {
 
         let day_counter = 1;
 
+        //ajax call for 5-day forecast
         $.ajax({
             url: five_day_forecast,
-            method: "GET"
+            method: "GET",
         }).then(function (response) {
 
 
@@ -128,6 +124,7 @@ $(document).ready(function () {
         $(".btn").click(currentWeather);
         $(".btn").click(fiveDayForecast);
 
+        //local storage clear history fucntion
     }
     function clearHistory() {
         $("#search-history").empty();

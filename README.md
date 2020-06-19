@@ -41,7 +41,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ---
 Technologies Used:
 
-HTML, Bootstrap, jQuery, Ajax, Moments, Font Awesome
+HTML, CSS, JavaScript, Bootstrap, jQuery, Ajax, Moments, Font Awesome
 
 
 
