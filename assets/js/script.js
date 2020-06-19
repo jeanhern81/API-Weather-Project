@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 $( document ).ready(function() {
 <<<<<<< HEAD:assets/js/script.js
     var appID = "2d52799f575e2efb8c494bcd1971726e";
@@ -72,6 +73,8 @@ $( document ).ready(function() {
     });
 });
 =======
+=======
+>>>>>>> refs/remotes/origin/master
 
 //Variables
 $(document).ready(function () {
@@ -210,4 +213,7 @@ $(document).ready(function () {
     $("#submit-city").click(displaySearchHistory);
 
     });
+<<<<<<< HEAD
 >>>>>>> b16cfc248a55d0894b6af7ca395e443ad7353e46
+=======
+>>>>>>> refs/remotes/origin/master

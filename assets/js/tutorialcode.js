@@ -1,9 +1,13 @@
 $( document ).ready(function() {
+<<<<<<< HEAD:assets/js/tutorialcode.js
 <<<<<<< HEAD:assets/js/script.js
     var appID = "2d52799f575e2efb8c494bcd1971726e";
 =======
     var appID = "2d52799f575e2efb8c494bcd1971726ecd";
 >>>>>>> b16cfc248a55d0894b6af7ca395e443ad7353e46:assets/js/tutorialcode.js
+=======
+    var appID = "2d52799f575e2efb8c494bcd1971726ecd";
+>>>>>>> refs/remotes/origin/master:script.js
 
     $(".query_btn").click(function(){
         var query_param = $(this).prev().val();
