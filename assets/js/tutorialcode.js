@@ -1,5 +1,13 @@
 $( document ).ready(function() {
+<<<<<<< HEAD:assets/js/tutorialcode.js
+<<<<<<< HEAD:assets/js/script.js
+    var appID = "2d52799f575e2efb8c494bcd1971726e";
+=======
     var appID = "2d52799f575e2efb8c494bcd1971726ecd";
+>>>>>>> b16cfc248a55d0894b6af7ca395e443ad7353e46:assets/js/tutorialcode.js
+=======
+    var appID = "2d52799f575e2efb8c494bcd1971726ecd";
+>>>>>>> refs/remotes/origin/master:script.js
 
     $(".query_btn").click(function(){
         var query_param = $(this).prev().val();
@@ -15,9 +23,9 @@ $( document ).ready(function() {
         var query_param = $(this).prev().val();
 
         if ($(this).prev().attr("placeholder") == "City") {
-            var weather = "https://api.openweathermap.org/data/2.5/weather?q=" + query_param + "&APPID=" + appID;
+            var weather = "http://api.openweathermap.org/data/2.5/weather?q=" + query_param + "&APPID=" + appID;
         } else if ($(this).prev().attr("placeholder") == "Zip Code") {
-            var weather = "https://api.openweathermap.org/data/2.5/weather?zip=" + query_param + "&APPID=" + appID;
+            var weather = "http://api.openweathermap.org/data/2.5/weather?zip=" + query_param + "&APPID=" + appID;
         }
     })
 });
@@ -31,9 +39,9 @@ $( document ).ready(function() {
         var query_param = $(this).prev().val();
 
         if ($(this).prev().attr("placeholder") == "City") {
-            var weather = "https://api.openweathermap.org/data/2.5/weather?q=" + query_param + "&APPID=" + appID;
+            var weather = "http://api.openweathermap.org/data/2.5/weather?q=" + query_param + "&APPID=" + appID;
         } else if ($(this).prev().attr("placeholder") == "Zip Code") {
-            var weather = "https://api.openweathermap.org/data/2.5/weather?zip=" + query_param + "&APPID=" + appID;
+            var weather = "http://api.openweathermap.org/data/2.5/weather?zip=" + query_param + "&APPID=" + appID;
         }
 
         $.getJSON(weather,function(json){
