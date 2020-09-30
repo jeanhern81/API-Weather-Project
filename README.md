@@ -1,25 +1,20 @@
----
-Title: API Weather Dashboard
-
-Created By: Jeanette Hernandez
-
-Date: June 17, 2020
-
-Website: https://jeanhern81.github.io/API-Weather-Project/
-
----
-![Screenshot](./assets/images/screenshot.JPG)
-
----
-Information:
+# API Weather Dashboard
 
 This simple to use weather dashboard features a history log of your most visited cities, that can be cleared by the press of button. You can switch from city to see to view the local temperature, humidty, wind speed, uv index, along with the 5 day weather forecast. 
 
 Search bar does not support zip code search.
 
+
+---
+## Demo
+
+![Screenshot](./assets/images/screenshot.JPG)
+
+Website: https://jeanhern81.github.io/API-Weather-Project/
+
 ---
 
-References: 
+## References: 
 
 <a href="https://openweathermap.org/api/uvi"> Open Weather</a>
 
@@ -28,7 +23,14 @@ References:
 <a href="https://openweather.co.uk/blog/post/how-use-openweathermap-uv-index">How to use Open WeatherMap UV Index</a>
 
 ---
-Licensing:
+
+## Technologies Used:
+
+HTML, CSS, JavaScript, Bootstrap, jQuery, Ajax, Moments, Font Awesome
+
+---
+
+## Licensing:
 
 MIT License
 
@@ -40,10 +42,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
----
-Technologies Used:
 
-HTML, CSS, JavaScript, Bootstrap, jQuery, Ajax, Moments, Font Awesome
 
 
 
